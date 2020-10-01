@@ -9,7 +9,7 @@
 #define PRETO 2
 #define NULO -1
 
-// Definindo número de vertices
+// Definindo nÃºmero de vertices
 #define N 5
 
 using namespace std;
@@ -234,13 +234,13 @@ int main(){
 	
 	int opcao;
 	
-	printf("1 -> Criar\n");
-	printf("2 -> Adicionar\n");
-	printf("3 -> Retirar\n");
-	printf("4 -> Vertice Adjacente\n");
-	printf("5 -> Imprimir Matriz\n");
-	printf("6 -> Imprimir Informacao\n");
-	printf("0 -> Sair\n");
+	printf("1 -> Criar \n");
+	printf("2 -> Adicionar \n");
+	printf("3 -> Retirar \n");
+	printf("4 -> Vertice Adjacente \n");
+	printf("5 -> Imprimir Matriz \n");
+	printf("6 -> Imprimir Informacao\ n");
+	printf("0 -> Sair \n");
 	
 	printf("\nOpcao: ");
 	scanf("%d", &opcao);
