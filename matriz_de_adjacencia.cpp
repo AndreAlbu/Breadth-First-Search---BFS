@@ -3,13 +3,13 @@
 #include <iostream>
 #include <queue>
 
-// Definindo cores
+// Definindo as cores usadas no problema
 #define BRANCO 0
 #define CINZA 1
 #define PRETO 2
 #define NULO -1
 
-// Definindo número de vertices
+// Definindo nÃºmero de vertices de modo constante
 #define N 5
 
 using namespace std;
@@ -94,7 +94,7 @@ void imprimi_info(){
 		printf(" %d|", i);
 	}
 	
-	printf("\n            -------------------\n");
+	printf("\n            #####################\n");
 	
 	printf("Cor:        |");
 	
@@ -103,7 +103,7 @@ void imprimi_info(){
 		printf(" %d|", cor[i]);
 	}
 	
-	printf("\n            -------------------\n");
+	printf("\n            #####################\n");
 	
 	printf("Distancia:  |");
 	
@@ -112,7 +112,7 @@ void imprimi_info(){
 		printf(" %d|", d[i]);
 	}
 	
-	printf("\n            -------------------\n");
+	printf("\n           ######################\n");
 	
 	printf("Antecessor: |");
 	
@@ -155,7 +155,7 @@ void insere(int matriz[N][N]){
 	int i, qtd;
 	int origem, destino;
 	
-	printf("Informe os vertice a serem adcionados: \n");
+	printf("Por favor, informar os vertice a serem adcionados: \n");
 	scanf("%d", &qtd);
 	
 	
@@ -167,7 +167,7 @@ void insere(int matriz[N][N]){
 		if(origem >= N){
 			
 			origem = 0;
-			printf("O vertice nao existe!\n");
+			printf("Tal vertice nao existe!\n");
 			printf("Insira o %d ponto de origem: ", i);
 			scanf("%d", &origem);
 		}
@@ -178,7 +178,7 @@ void insere(int matriz[N][N]){
 		if(destino >= N){
 			
 			destino = 0;
-			printf("O vertice nao existe!\n");
+			printf("Tal vertice nao existe!\n");
 			printf("Insira o %d ponto de destino: ", i);
 			scanf("%d", &destino);
 		}
@@ -194,9 +194,9 @@ void retira(int matriz[N][N]){
 	
 	int origem, destino;
 	
-	printf("Informe a origem da aresta: ");
+	printf("Informar a origem da aresta: ");
 	scanf("%d", &origem);
-	printf("Informe o destino da aresta: ");
+	printf("Informar o destino da aresta: ");
 	scanf("%d", &destino);
 	
 	matriz[origem][destino] = 0;
@@ -224,7 +224,7 @@ void vertice_adjacente(int matriz[N][N]){
 	
 	if(cout == 0){
 		
-		printf("Nao existe!");
+		printf("Inexistente!");
 	}
 		
 }
